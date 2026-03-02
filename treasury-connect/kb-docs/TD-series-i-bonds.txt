@@ -1,0 +1,42 @@
+# TreasuryDirect - Series I Savings Bonds
+
+## Purchase Limits
+
+- **Electronic I Bonds**: $10,000 per calendar year per Social Security Number
+- **Paper I Bonds**: $5,000 per calendar year (only available via tax refund)
+- **Total Maximum**: $15,000 per year ($10,000 electronic + $5,000 paper)
+
+## Interest Rate Calculation
+
+Series I Bonds earn interest through a composite rate that combines:
+
+1. **Fixed Rate**: Set at purchase, remains for 30-year life of bond
+2. **Inflation Rate**: Adjusted every 6 months based on CPI-U
+
+**Composite Rate Formula**: 
+Composite rate = [Fixed rate + (2 x Inflation rate) + (Fixed rate x Inflation rate)]
+
+## Redemption Rules
+
+- **Minimum holding period**: 12 months (cannot redeem before 1 year)
+- **Early redemption penalty**: If redeemed before 5 years, you forfeit the last 3 months of interest
+- **Tax deferral**: Interest is tax-deferred until redemption or 30 years
+- **Education exclusion**: May be tax-free if used for qualified education expenses
+
+## Current Rates (Example)
+
+As of the most recent rate announcement:
+- Fixed rate: 1.30%
+- Inflation rate: 3.94%
+- Composite rate: 5.27% (for first 6 months)
+
+Rates are announced each May 1 and November 1.
+
+## How to Purchase
+
+1. Create a TreasuryDirect account at www.treasurydirect.gov
+2. Link your bank account
+3. Purchase bonds in any amount from $25 to $10,000 (to the penny)
+4. Bonds are held electronically in your account
+
+Reference: 31 CFR Part 359 - Series I Savings Bonds

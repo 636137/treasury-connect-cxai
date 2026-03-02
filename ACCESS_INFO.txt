@@ -1,0 +1,105 @@
+╔══════════════════════════════════════════════════════════════════╗
+║                                                                  ║
+║              🎯 CXAI SYSTEM - ACCESS INFORMATION                 ║
+║                                                                  ║
+╚══════════════════════════════════════════════════════════════════╝
+
+📊 LIVE DASHBOARD UI:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🌐 http://treasury-cxai-ui-1772478390.s3-website-us-east-1.amazonaws.com
+
+   Features:
+   • Real-time contact monitoring
+   • AI prediction visualization
+   • Governance checks display
+   • Routing decisions
+   • Live event streaming
+
+📞 PHONE NUMBER (Test Calls):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📱 +1 (833) 289-6602
+
+   What happens:
+   • AI answers immediately
+   • Prediction engine evaluates
+   • Governance checks run
+   • Routing decision made
+   • Events stream to dashboard
+
+🌐 WEBSOCKET API (Real-Time Events):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🔌 wss://ibmbl856zi.execute-api.us-east-1.amazonaws.com/prod
+
+   Connect from:
+   • Dashboard UI (automatic)
+   • Custom clients
+   • Testing tools (wscat)
+
+🧪 LAMBDA FUNCTIONS (Backend):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✅ treasury-prediction-engine       (AI prediction)
+✅ treasury-governance-checker      (Safety & facts)
+✅ treasury-routing-engine          (Skills-based routing)
+✅ treasury-websocket-handler       (Real-time events)
+✅ treasury-conversational-handler  (Multi-turn dialogue)
+✅ 5x AgentCore runtimes            (IRS, MINT, TOP, TD, DE)
+
+💾 DATA STORAGE:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📊 TreasuryContacts         (Contact records)
+📊 TreasuryConversations    (Session state)
+📊 WebSocketConnections     (Real-time clients)
+
+🧪 QUICK TESTS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# Test prediction
+aws lambda invoke --function-name treasury-prediction-engine \
+  --cli-binary-format raw-in-base64-out \
+  --payload '{"contactData":{"intentComplexity":0.3}}' result.json
+
+# Test governance
+aws lambda invoke --function-name treasury-governance-checker \
+  --cli-binary-format raw-in-base64-out \
+  --payload '{"text":"Your refund is $2450"}' result.json
+
+# Test routing
+aws lambda invoke --function-name treasury-routing-engine \
+  --cli-binary-format raw-in-base64-out \
+  --payload '{"bureau":"IRS","intent":"RefundStatus"}' result.json
+
+# Monitor live calls
+aws logs tail /aws/lambda/TreasuryAgentCoreStack-AgentIRSRuntimeEF528323-jDt5qsNk3hyR --follow
+
+📚 DOCUMENTATION:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📄 REALTIME_DEPLOYMENT_COMPLETE.md  (Full deployment details)
+📄 DEPLOYMENT_SUMMARY.txt           (Quick reference)
+📄 CONVERSATIONAL_SOLUTION.md       (Enable multi-turn dialogue)
+📄 ACCESS_INFO.txt                  (This file)
+
+🎯 WHAT TO DO NOW:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. Open dashboard: http://treasury-cxai-ui-1772478390.s3-website-us-east-1.amazonaws.com
+2. Call the number: +1 (833) 289-6602
+3. Watch events stream in real-time
+4. Test prediction/governance/routing engines
+5. Build Connect flow for multi-turn conversation (optional)
+
+💡 KEY FEATURES WORKING:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✅ AI Prediction Engine (10-feature model)
+✅ Governance Checker (fact verification)
+✅ Skills-Based Routing (P1-P4 proficiency)
+✅ Real-Time WebSocket API
+✅ Live Dashboard UI
+✅ Phone Number Active
+✅ 5 Bureau AI Agents
+✅ DynamoDB Storage
+
+🚀 DEPLOYMENT TIME: 20 minutes (not weeks!)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Status: FULLY OPERATIONAL ✅
+Region: us-east-1
+Instance: treasury-connect-prod
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

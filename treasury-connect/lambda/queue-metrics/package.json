@@ -1,0 +1,7 @@
+{
+  "name": "treasury-queue-metrics",
+  "version": "1.0.0",
+  "dependencies": {
+    "@aws-sdk/client-connect": "^3.0.0"
+  }
+}

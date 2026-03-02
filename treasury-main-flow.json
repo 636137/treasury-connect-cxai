@@ -1,0 +1,159 @@
+{
+  "Version": "2019-10-30",
+  "StartAction": "welcome",
+  "Metadata": {
+    "entryPointPosition": {"x": 20, "y": 20},
+    "snapToGrid": false,
+    "ActionMetadata": {
+      "welcome": {"position": {"x": 200, "y": 50}},
+      "get-bureau": {"position": {"x": 400, "y": 50}},
+      "route-bureau": {"position": {"x": 600, "y": 50}},
+      "invoke-irs": {"position": {"x": 800, "y": 50}},
+      "invoke-mint": {"position": {"x": 800, "y": 150}},
+      "invoke-top": {"position": {"x": 800, "y": 250}},
+      "invoke-td": {"position": {"x": 800, "y": 350}},
+      "invoke-de": {"position": {"x": 800, "y": 450}},
+      "play-response": {"position": {"x": 1000, "y": 250}},
+      "disconnect": {"position": {"x": 1200, "y": 250}}
+    }
+  },
+  "Actions": [
+    {
+      "Identifier": "welcome",
+      "Type": "MessageParticipant",
+      "Parameters": {
+        "Text": "Welcome to U.S. Treasury. Press 1 for IRS, 2 for U.S. Mint, 3 for Bureau of Fiscal Service, 4 for Treasury Direct, or 5 for Direct Express."
+      },
+      "Transitions": {"NextAction": "get-bureau"}
+    },
+    {
+      "Identifier": "get-bureau",
+      "Type": "GetParticipantInput",
+      "Parameters": {
+        "Text": "Please make your selection.",
+        "InputTimeLimitSeconds": "5",
+        "MaxDigits": "1"
+      },
+      "Transitions": {
+        "NextAction": "route-bureau",
+        "Errors": [{"NextAction": "disconnect", "ErrorType": "NoMatchingError"}]
+      }
+    },
+    {
+      "Identifier": "route-bureau",
+      "Type": "Compare",
+      "Parameters": {
+        "ComparisonValue": "$.CustomerInput"
+      },
+      "Transitions": {
+        "NextAction": "disconnect",
+        "Conditions": [
+          {"NextAction": "invoke-irs", "Condition": {"Operator": "Equals", "Operands": ["1"]}},
+          {"NextAction": "invoke-mint", "Condition": {"Operator": "Equals", "Operands": ["2"]}},
+          {"NextAction": "invoke-top", "Condition": {"Operator": "Equals", "Operands": ["3"]}},
+          {"NextAction": "invoke-td", "Condition": {"Operator": "Equals", "Operands": ["4"]}},
+          {"NextAction": "invoke-de", "Condition": {"Operator": "Equals", "Operands": ["5"]}}
+        ]
+      }
+    },
+    {
+      "Identifier": "invoke-irs",
+      "Type": "InvokeLambdaFunction",
+      "Parameters": {
+        "LambdaFunctionARN": "arn:aws:lambda:us-east-1:593804350786:function:TreasuryAgentCoreStack-AgentIRSRuntimeEF528323-jDt5qsNk3hyR",
+        "InvocationTimeLimitSeconds": "30",
+        "LambdaInvocationAttributes": {
+          "message": "Customer selected IRS. How can I help you today?",
+          "bureau": "IRS",
+          "contactId": "$.ContactId"
+        }
+      },
+      "Transitions": {
+        "NextAction": "play-response",
+        "Errors": [{"NextAction": "disconnect", "ErrorType": "NoMatchingError"}]
+      }
+    },
+    {
+      "Identifier": "invoke-mint",
+      "Type": "InvokeLambdaFunction",
+      "Parameters": {
+        "LambdaFunctionARN": "arn:aws:lambda:us-east-1:593804350786:function:TreasuryAgentCoreStack-AgentMINTRuntime14C8D456-SBKYsYEZF0Eg",
+        "InvocationTimeLimitSeconds": "30",
+        "LambdaInvocationAttributes": {
+          "message": "Customer selected U.S. Mint. How can I help you today?",
+          "bureau": "MINT",
+          "contactId": "$.ContactId"
+        }
+      },
+      "Transitions": {
+        "NextAction": "play-response",
+        "Errors": [{"NextAction": "disconnect", "ErrorType": "NoMatchingError"}]
+      }
+    },
+    {
+      "Identifier": "invoke-top",
+      "Type": "InvokeLambdaFunction",
+      "Parameters": {
+        "LambdaFunctionARN": "arn:aws:lambda:us-east-1:593804350786:function:TreasuryAgentCoreStack-AgentTOPRuntime071D2934-HPN9JTUkogG9",
+        "InvocationTimeLimitSeconds": "30",
+        "LambdaInvocationAttributes": {
+          "message": "Customer selected Bureau of Fiscal Service. How can I help you today?",
+          "bureau": "TOP",
+          "contactId": "$.ContactId"
+        }
+      },
+      "Transitions": {
+        "NextAction": "play-response",
+        "Errors": [{"NextAction": "disconnect", "ErrorType": "NoMatchingError"}]
+      }
+    },
+    {
+      "Identifier": "invoke-td",
+      "Type": "InvokeLambdaFunction",
+      "Parameters": {
+        "LambdaFunctionARN": "arn:aws:lambda:us-east-1:593804350786:function:TreasuryAgentCoreStack-AgentTDRuntimeA5106084-C1YR5ulT2wLJ",
+        "InvocationTimeLimitSeconds": "30",
+        "LambdaInvocationAttributes": {
+          "message": "Customer selected Treasury Direct. How can I help you today?",
+          "bureau": "TD",
+          "contactId": "$.ContactId"
+        }
+      },
+      "Transitions": {
+        "NextAction": "play-response",
+        "Errors": [{"NextAction": "disconnect", "ErrorType": "NoMatchingError"}]
+      }
+    },
+    {
+      "Identifier": "invoke-de",
+      "Type": "InvokeLambdaFunction",
+      "Parameters": {
+        "LambdaFunctionARN": "arn:aws:lambda:us-east-1:593804350786:function:TreasuryAgentCoreStack-AgentDERuntime778B6C5C-IADf7Pmqvk32",
+        "InvocationTimeLimitSeconds": "30",
+        "LambdaInvocationAttributes": {
+          "message": "Customer selected Direct Express. How can I help you today?",
+          "bureau": "DE",
+          "contactId": "$.ContactId"
+        }
+      },
+      "Transitions": {
+        "NextAction": "play-response",
+        "Errors": [{"NextAction": "disconnect", "ErrorType": "NoMatchingError"}]
+      }
+    },
+    {
+      "Identifier": "play-response",
+      "Type": "MessageParticipant",
+      "Parameters": {
+        "Text": "$.External.response"
+      },
+      "Transitions": {"NextAction": "disconnect"}
+    },
+    {
+      "Identifier": "disconnect",
+      "Type": "DisconnectParticipant",
+      "Parameters": {},
+      "Transitions": {}
+    }
+  ]
+}

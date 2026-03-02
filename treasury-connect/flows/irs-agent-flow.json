@@ -1,0 +1,88 @@
+{
+  "Version": "2019-10-30",
+  "StartAction": "WelcomeMessage",
+  "Metadata": {
+    "entryPointPosition": {"x": 20, "y": 20},
+    "snapToGrid": false,
+    "ActionMetadata": {
+      "WelcomeMessage": {"position": {"x": 200, "y": 50}},
+      "GetCustomerInput": {"position": {"x": 400, "y": 50}},
+      "InvokeIRSAgent": {"position": {"x": 600, "y": 50}},
+      "PlayResponse": {"position": {"x": 800, "y": 50}},
+      "Disconnect": {"position": {"x": 1000, "y": 50}}
+    }
+  },
+  "Actions": [
+    {
+      "Identifier": "WelcomeMessage",
+      "Type": "MessageParticipant",
+      "Parameters": {
+        "Text": "Welcome to the U.S. Treasury IRS helpline. How can I assist you today?"
+      },
+      "Transitions": {
+        "NextAction": "GetCustomerInput"
+      }
+    },
+    {
+      "Identifier": "GetCustomerInput",
+      "Type": "GetParticipantInput",
+      "Parameters": {
+        "Text": "Please describe your question or say 'refund status' to check your refund.",
+        "InputTimeLimitSeconds": "30",
+        "InputValidation": {
+          "CustomValidation": {
+            "MaximumLength": "500"
+          }
+        }
+      },
+      "Transitions": {
+        "NextAction": "InvokeIRSAgent",
+        "Errors": [
+          {
+            "ErrorType": "NoMatchingError",
+            "NextAction": "Disconnect"
+          }
+        ]
+      }
+    },
+    {
+      "Identifier": "InvokeIRSAgent",
+      "Type": "InvokeLambdaFunction",
+      "Parameters": {
+        "LambdaFunctionARN": "arn:aws:lambda:us-east-1:593804350786:function:TreasuryAgentCoreStack-AgentIRSRuntimeEF528323-jDt5qsNk3hyR",
+        "InvocationTimeLimitSeconds": "30",
+        "LambdaInvocationAttributes": {
+          "message": "$.CustomerInput",
+          "sessionId": "$.ContactId"
+        },
+        "ResponseValidation": {
+          "ResponseType": "JSON"
+        }
+      },
+      "Transitions": {
+        "NextAction": "PlayResponse",
+        "Errors": [
+          {
+            "ErrorType": "NoMatchingError",
+            "NextAction": "Disconnect"
+          }
+        ]
+      }
+    },
+    {
+      "Identifier": "PlayResponse",
+      "Type": "MessageParticipant",
+      "Parameters": {
+        "Text": "$.External.response"
+      },
+      "Transitions": {
+        "NextAction": "Disconnect"
+      }
+    },
+    {
+      "Identifier": "Disconnect",
+      "Type": "DisconnectParticipant",
+      "Parameters": {}
+    }
+  ]
+}

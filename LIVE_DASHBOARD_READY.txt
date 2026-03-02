@@ -1,0 +1,76 @@
+╔══════════════════════════════════════════════════════════════════╗
+║                                                                  ║
+║              ✅ LIVE DASHBOARD - READY TO USE                    ║
+║                                                                  ║
+╚══════════════════════════════════════════════════════════════════╝
+
+🌐 OPEN DASHBOARD:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+http://treasury-cxai-ui-1772478390.s3-website-us-east-1.amazonaws.com
+
+📞 CALL TO SEE LIVE DATA:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
++1 (833) 289-6602
+
+🎯 WHAT HAPPENS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. Open dashboard in browser
+2. Call the phone number
+3. Watch contact appear in real-time
+4. See all event data streaming live
+5. Click contact to view full details
+
+✅ WHAT'S FIXED:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✅ UI shows REAL data (not demo simulation)
+✅ WebSocket connected to live backend
+✅ Lambda broadcasts events on every call
+✅ Contact details displayed in JSON
+✅ Real-time updates as calls happen
+
+📊 DASHBOARD FEATURES:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+• Live contact list (last 50 calls)
+• Real-time event streaming
+• Contact detail viewer
+• System status indicators
+• WebSocket connection status
+• Timestamp for each event
+
+🔧 TECHNICAL DETAILS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+WebSocket: wss://ibmbl856zi.execute-api.us-east-1.amazonaws.com/prod
+Lambda: treasury-conversational-handler (broadcasts events)
+UI: React app with live WebSocket client
+Storage: DynamoDB (contacts + sessions)
+
+🧪 TEST IT NOW:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. Open: http://treasury-cxai-ui-1772478390.s3-website-us-east-1.amazonaws.com
+2. Verify "Connected" status shows green
+3. Call: +1 (833) 289-6602
+4. Watch contact appear instantly
+5. Click to see full event data
+
+💡 WHAT YOU'LL SEE:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+{
+  "type": "contact",
+  "contactId": "abc-123...",
+  "bureau": "IRS",
+  "channel": "VOICE",
+  "timestamp": "2026-03-02T19:15:00Z",
+  "phase": "INIT",
+  "customerInput": "Where is my refund?",
+  "agentResponse": "I can help you...",
+  "turnCount": 1
+}
+
+🚀 STATUS: FULLY OPERATIONAL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✅ Dashboard deployed
+✅ WebSocket connected
+✅ Lambda broadcasting
+✅ Real data flowing
+✅ Ready to demo!
+

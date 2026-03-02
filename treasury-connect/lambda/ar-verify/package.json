@@ -1,0 +1,7 @@
+{
+  "name": "treasury-ar-verify",
+  "version": "1.0.0",
+  "dependencies": {
+    "@aws-sdk/client-lambda": "^3.0.0"
+  }
+}

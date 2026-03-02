@@ -1,0 +1,80 @@
+╔══════════════════════════════════════════════════════════════════╗
+║                                                                  ║
+║           ✅ CHAT TESTING WITH AUTOMATION - READY                ║
+║                                                                  ║
+╚══════════════════════════════════════════════════════════════════╝
+
+🧪 AUTOMATED TEST SCRIPT:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+python3 test-end-to-end.py
+
+This script:
+✅ Broadcasts contact start to dashboard
+✅ Invokes IRS AI agent
+✅ Gets real AI response
+✅ Broadcasts response to dashboard
+✅ Shows results in real-time
+
+📊 WATCH LIVE:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+http://treasury-cxai-ui-1772478390.s3-website-us-east-1.amazonaws.com
+
+Open dashboard BEFORE running test to see events stream live!
+
+🎯 WHAT YOU'LL SEE:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. Contact appears in dashboard (INIT phase)
+2. Customer message displayed
+3. AI response appears (RESPONSE phase)
+4. Full event data in JSON viewer
+
+📝 EXAMPLE OUTPUT:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+{
+  "type": "contact",
+  "contactId": "test-1772479329",
+  "bureau": "IRS",
+  "channel": "CHAT",
+  "timestamp": "2026-03-02T19:22:09Z",
+  "phase": "RESPONSE",
+  "agentResponse": "I've checked your refund status..."
+}
+
+🔄 RUN MULTIPLE TESTS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# Test different messages
+python3 test-end-to-end.py
+
+# Each run creates a new contact
+# Watch them stack up in the dashboard!
+
+✅ WHAT'S WORKING:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✅ Automated testing via Python script
+✅ Real AI responses from IRS agent
+✅ WebSocket broadcasting to dashboard
+✅ Real-time event streaming
+✅ Full FlowOpsCenter UI
+✅ EventBridge capturing Connect events
+✅ Chat handler Lambda deployed
+
+🚀 QUICK START:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. Open dashboard in browser
+2. Run: python3 test-end-to-end.py
+3. Watch events appear instantly
+4. Run again to see multiple contacts
+
+📞 ALSO WORKS WITH REAL CALLS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Call: +1 (833) 289-6602
+Events will appear in dashboard via EventBridge
+
+🎯 STATUS: FULLY OPERATIONAL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✅ Automated testing ready
+✅ Real AI responses
+✅ Live dashboard updates
+✅ WebSocket streaming
+✅ Full UI restored
+

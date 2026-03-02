@@ -1,0 +1,61 @@
+# Treasury Offset Program (TOP) - Offset Process
+
+## What is the Treasury Offset Program?
+
+The Treasury Offset Program (TOP) is administered by the Bureau of the Fiscal Service. TOP collects delinquent debts owed to federal and state agencies by offsetting (reducing) federal payments.
+
+## Types of Payments Subject to Offset
+
+- Federal tax refunds
+- Federal salary payments
+- Social Security benefits (limited to 15% for most debts)
+- Vendor and contractor payments
+- Federal retirement benefits
+
+## Exempt Payments
+
+The following payments are generally NOT subject to offset:
+- Supplemental Security Income (SSI)
+- VA disability compensation
+- Certain federal salary amounts below threshold
+
+## Offset Priority Order
+
+When multiple debts exist, offsets are applied in this order:
+1. Child support
+2. Federal tax debts
+3. Other federal agency debts
+4. State income tax debts
+5. Unemployment compensation debts
+
+## Notification Requirements
+
+Before an offset occurs, you must receive:
+- **Pre-offset notice**: At least 60 days before offset for most debts
+- **Debt amount and creditor agency**
+- **Right to inspect and copy records**
+- **Right to dispute the debt**
+- **Right to request hardship review**
+
+## How to Dispute an Offset
+
+1. **Contact the creditor agency** (not TOP or IRS) - the agency listed on your offset notice
+2. **Submit dispute within 60 days** of the pre-offset notice
+3. **Provide documentation** supporting your dispute
+4. **Request review hearing** if available
+
+## Hardship Exemption
+
+You may request a hardship exemption if the offset would cause severe financial hardship. Requirements:
+- Demonstrate inability to meet basic living expenses
+- Provide financial documentation
+- Submit request to creditor agency (not TOP)
+
+## Offset Inquiry
+
+To find out why your refund was offset:
+- Call TOP at 1-800-304-3107
+- Have your Social Security Number ready
+- TOP will provide the creditor agency contact information
+
+Reference: 31 CFR Part 285 - Debt Collection Authorities Under the Debt Collection Improvement Act of 1996

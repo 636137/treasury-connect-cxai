@@ -1,0 +1,8 @@
+{
+  "name": "treasury-identity-validate",
+  "version": "1.0.0",
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.0.0",
+    "@aws-sdk/client-cognito-identity-provider": "^3.0.0"
+  }
+}

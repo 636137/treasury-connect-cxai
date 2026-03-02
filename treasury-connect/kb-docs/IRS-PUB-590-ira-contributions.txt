@@ -1,0 +1,42 @@
+# IRS Publication 590-A - IRA Contribution Limits (2025)
+
+## 2025 IRA Contribution Limits
+
+For tax year 2025, the maximum amount you can contribute to a traditional IRA or Roth IRA is:
+
+- **Under age 50**: $7,000
+- **Age 50 or older**: $8,000 (includes $1,000 catch-up contribution)
+
+## Contribution Deadline
+
+You can make 2025 IRA contributions until the tax filing deadline (typically April 15, 2026), not including extensions.
+
+## Income Limits for Deductible Traditional IRA Contributions
+
+If you (or your spouse) are covered by a retirement plan at work, your deduction may be reduced or eliminated based on your modified adjusted gross income (MAGI):
+
+### Single or Head of Household (2025)
+- **Full deduction**: MAGI of $77,000 or less
+- **Partial deduction**: MAGI between $77,000 and $87,000
+- **No deduction**: MAGI of $87,000 or more
+
+### Married Filing Jointly (2025)
+- **Full deduction**: MAGI of $123,000 or less
+- **Partial deduction**: MAGI between $123,000 and $143,000
+- **No deduction**: MAGI of $143,000 or more
+
+## Roth IRA Income Limits
+
+For Roth IRA contributions, income limits apply:
+
+### Single or Head of Household (2025)
+- **Full contribution**: MAGI less than $146,000
+- **Partial contribution**: MAGI between $146,000 and $161,000
+- **No contribution**: MAGI of $161,000 or more
+
+### Married Filing Jointly (2025)
+- **Full contribution**: MAGI less than $230,000
+- **Partial contribution**: MAGI between $230,000 and $240,000
+- **No contribution**: MAGI of $240,000 or more
+
+Reference: Internal Revenue Code §219(b)(5) and §408A(c)(3).

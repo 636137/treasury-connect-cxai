@@ -1,0 +1,27 @@
+node_modules/
+build/
+dist/
+.DS_Store
+*.log
+.env
+.env.local
+cdk.out/
+*.d.ts
+!jest.config.js
+
+# Keep important JS files
+!api-server.js
+!src/**/*.js
+!treasury-connect/**/*.js
+
+# AWS
+.aws-sam/
+*.zip
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
