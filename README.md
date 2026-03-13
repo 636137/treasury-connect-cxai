@@ -1,3 +1,9 @@
+## Proprietary Notice
+
+This code is proprietary to **Maximus**. **No public license is granted**. See [`NOTICE`](./NOTICE).
+
+---
+
 # Treasury Connect - Flow Operations Center
 
 **AI-Powered Contact Center for U.S. Treasury**
