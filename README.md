@@ -6,6 +6,18 @@ This code is proprietary to **Maximus**. **No public license is granted**. See [
 
 # Treasury Connect - Flow Operations Center
 
+## Repository Layout
+
+- `frontend/`
+- `backend/`
+- `infra/`
+
+## Local vs Deploy
+
+- Local: see `docs/how-to.md`
+- Deploy: see `infra/` (and `infra/treasury-connect/` if present)
+
+
 **AI-Powered Contact Center for U.S. Treasury**
 
 A demonstration of Amazon Connect integrated with Amazon Bedrock Agents, Guardrails, and Automated Reasoning for secure, compliant citizen service across 5 Treasury bureaus.
